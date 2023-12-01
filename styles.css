@@ -89,3 +89,9 @@ padding: 2.5rem 3rem;
 gap: 3rem;
 z-index: 1;
 }
+
+h2:hover {
+    transition:1s;
+    color:red;
+    font-size: 5rem;
+}
