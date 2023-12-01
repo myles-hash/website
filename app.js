@@ -10,15 +10,18 @@ addClickHandler('playSound', 'myAudio');
 addClickHandler('playSound2', 'myAudio2');
 addClickHandler('playSound3', 'myAudio3');
 
-const h2Element = document.getElementsById('names');
-const audioElement = document.getElementById('glitter');
-
-  function playSound() {
-    audioElement.play();
+function hoverSound(h2Id,glitterId){
+  document.getElementById(h2Id).addEventListener('mouseover',function(event) {
+    let glitter = document.getElementById(glitterId);
+    glitter.play();
+    event.preventDefault();
   }
+  )
+}
 
-  h2Element.addEventListener('mouseover', playSound);
+hoverSound('name1','glitter');
+hoverSound('name2','glitter');
+hoverSound('name3','glitter');
 
-  
 
  
