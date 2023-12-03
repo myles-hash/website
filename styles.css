@@ -92,6 +92,8 @@ z-index: 1;
 
 h2:hover {
     transition:1s;
-    color:red;
+    color:black;
+    background-color:white;
     font-size: 5rem;
+  
 }
